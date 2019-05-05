@@ -8,11 +8,11 @@ Text summarization refers to the technique of shortening long pieces of text. Th
 
 
 Packges used in this project are:
-1. Python 3.6
-2. Flask
-3. Gensim
-4. Bs4
-5. NLTK
+1. <a href="https://www.python.org/downloads/" > Python 3.6 </a>
+2. <a href="http://flask.pocoo.org/"> Flask 1.0.2 </a>
+3. <a href="https://radimrehurek.com/gensim/"> Gensim </a>
+4. <a href="https://pypi.org/project/bs4/"> bs4 </a>
+5. <a href="https://www.nltk.org/install.html"> NLTK </a>
 
 
 <p align="center">
