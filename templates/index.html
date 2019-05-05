@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title> Running </title>
+
+		<!-- Custom stlylesheet -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+		<script>
+		
+			function validateForm(){
+
+				var rv = true;
+				var name = document.forms["passdata"]["name"].value;
+				var pattern = name.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+				if ( pattern == null ) {
+					rv = false;
+				}	
+				return rv;
+			}	
+		</script>
+	</head>
+	<body>
+		
+		<div style="margin-top: 2%;">
+			<div class="ui segment" style="width: 40%;margin: 0 auto;text-align: justify;">
+				<center><h2 class="ui green header">Welcome to the Text Summarizer </h2></center>
+			</div>
+		</div>
+		<center>
+		<div>
+			<img src="../static/12.jpg" alt="No Suitable Image Found" width="20%" height="20%"/>
+		</div>
+		</center>
+		<form name="passdata" action="" method= "POST" style="margin-top: 4%;margin-bottom: 2%;" onsubmit="validateForm()">
+			
+			<div class="ui padded segment" style="width: 40%;margin: 0 auto;text-align: justify;">
+			
+				<table class="ui basic table">
+					<tr>
+					  <td>
+						<div class="ui labeled input">
+							<div class="ui label"> URL </div>
+							<input type="url" name="name" placeholder="Enter the URL of News Article">
+
+						</div>
+                          <span id="error-name" style="padding-left: 5%;color: red;font-size: 22;font-family: Times New Roman;">{{rem}}</span>
+					  </td>
+					</tr>
+					<tr>
+					  <td> <center> <button class="medium ui orange button" id="submit" name="submit">Submit</button> </center> </td>
+					</tr>
+				</table>
+			
+			</div>
+			
+		</form>
+
+
+
+        <div class="ui stackable fluid container" style="width:90%">
+
+                <div class="ui visible message" style="margin-bottom: 2%;padding: 2%;float: left;">
+			        <label><h2 class="ui blue header">Summarized Result:</h2></label>
+                    <p style="text-align: justify;"> {{SentRank}} </p>
+                </div>
+
+                <div class="ui visible message" style="margin-bottom: 2%;padding: 2%;float: right;">
+                    <label><h2 class="ui blue header">Gensim Result:</h2></label>
+                    <p style="text-align: justify;"> {{sentGen}} </p>
+                </div>
+
+
+        </div>
+
+	</body>
+</html>
+
+
