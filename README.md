@@ -31,12 +31,12 @@ To compare the Summarized results of an Online Article using "Word Ranking Algor
   	<li> We can Obtain the Summary by joining the required number of sentences together </il>
 	</ol>
 	</p>
-Step -II: Here, we use the "summarize" function of the gensim package { First 6 steps are same as that of Step  -I}
+<b> Step -II:</b> Here, we use the "summarize" function of the gensim package { First 6 steps are same as that of Step  -I}
     Now, the processed content is provided as parameter to the summarize function. We can obtain the summary based on the ratio that is to be provided as the parameter to the summarize function.
 
-Web Development:  We use the "Flask" to deploy the application which runs on localhost 5000.
+<b> Web Development:</b>  We use the "Flask" to deploy the application which runs on localhost 5000.
 
-Results: We can Compare the results of the two methods to understand the implementation of the Text based Summarization.
+<b> Results: </b> We can Compare the results of the two methods to understand the implementation of the Text based Summarization.
 
 
 Packges used in this project are:
