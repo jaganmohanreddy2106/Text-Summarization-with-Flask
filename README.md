@@ -6,29 +6,31 @@
 
 To compare the Summarized results of an Online Article using "Word Ranking Algorithm" and a function "summarize" of 'Gensim' Package.
 
-Step -I:     This is the "Extraction based summarization". Here, only the important sentences will be identified and they can be re-ordered to get the summary of the entire content. It's usage may be limited to some extent.
+<b>Step -I:</b>This is the "Extraction based summarization". Here, only the important sentences will be identified and they can be re-ordered to get the summary of the entire content. It's usage may be limited to some extent.
 	<br />
- 	 1. Import packages such as -  "Beautiful Soup (bs4), requests, regular expressions (re), Natural Language Tool Kit (nltk), heapq, gensim, Flask"
-	2. Web Scraping is done to Extract the content from the web page using   bs4, requests
+	<p><ol>
+ 	 <li> Import packages such as -  "Beautiful Soup (bs4), requests, regular expressions (re), Natural Language Tool Kit (nltk), heapq, gensim, Flask"</il>
+	<li> Web Scraping is done to Extract the content from the web page using   bs4, requests</il>
 	<br />
-	3. Scraping is achieved by understanding the style of the web page
+	<li> Scraping is achieved by understanding the style of the web page</il>
 	<br />
-	4. Text Cleaning of an Article is done by making use of (re) package
+	<li> Text Cleaning of an Article is done by making use of (re) package</il>
 	<br />
-	5. To process the text of an article, we use (nltk) package there by partitioning the entire content into sentences and words
+	<li> To process the text of an article, we use (nltk) package there by partitioning the entire content into sentences and words</il>
 	<br />
-	6. Stop words removal is done making use of "stopwords" of (nltk) 
+	<li> Stop words removal is done making use of "stopwords" of (nltk) </il>
 	<br />
-	7. We calculate the frequency of each unique valid word within the entire content
+	<li> We calculate the frequency of each unique valid word within the entire content </il>
 	<br />
-	8. We calculate the word-frequency or word-score making use of ratio between unique word frequency and max frequency of word within the content
+	<li> We calculate the word-frequency or word-score making use of ratio between unique word frequency and max frequency of word within the content </il>
 	<br />
-	9. We calculate the Sentence-score by summing up valid word-scores for every sentence
+	<li> We calculate the Sentence-score by summing up valid word-scores for every sentence </il>
 	<br />
-  	10. All the sentences are sorted in descending order by the sentence-score using (heapq) package
+  	<li> All the sentences are sorted in descending order by the sentence-score using (heapq) package </il>
 	<br />
-  	11. We can Obtain the Summary by joining the required number of sentences together
-
+  	<li> We can Obtain the Summary by joining the required number of sentences together </il>
+	</ol>
+	</p>
 Step -II: Here, we use the "summarize" function of the gensim package { First 6 steps are same as that of Step  -I}
     Now, the processed content is provided as parameter to the summarize function. We can obtain the summary based on the ratio that is to be provided as the parameter to the summarize function.
 
